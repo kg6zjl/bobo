@@ -1,7 +1,7 @@
 # Here's Bobo
 Bobo loves to answer your api requests and is always ready to throw some error codes your way. Need new routes as you test? No problem!
 
-## Usager Examples
+## Usage Examples
 Simple echo of anything you POST
 ```
 $ curl -XPOST localhost:8080/echo -d 'Hello world!'
