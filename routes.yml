@@ -1,0 +1,22 @@
+routes:
+  foo:
+    method: GET
+    path: foo
+    response: Foo's example response
+    code: 200
+    error: true
+  bar:
+    method: POST
+    path: bar
+    response: Bar's example response
+    code: 200
+    error: false
+  users/billy:
+    method: POST
+    path: billy
+    response: Billy is our favorite user of all time, can't touch him.
+    code: 403
+    error: false
+error_percentage: '90'
+hostname: 0.0.0.0
+port: '8080'
