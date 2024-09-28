@@ -1266,9 +1266,9 @@ checksum = "51d515d32fb182ee37cda2ccdcb92950d6a3c2893aa280e540671c2cd0f3b1d9"
 
 [[package]]
 name = "oasgen"
-version = "0.20.1"
+version = "0.22.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "aa21dccf81fcfa291cf45d4d2e48d86892895b38cf352eff637cfce3a54f62ac"
+checksum = "ec65779ae1c81966c5ba82a72bcfc52e2926b6f19636bed1c07e0383a6569df8"
 dependencies = [
  "futures",
  "http 1.1.0",
@@ -1280,39 +1280,38 @@ dependencies = [
  "oasgen-macro",
  "once_cell",
  "openapiv3-extended",
- "regex",
+ "regex-lite",
  "serde",
  "serde_json",
  "serde_yaml",
- "tokio",
 ]
 
 [[package]]
 name = "oasgen-core"
-version = "0.20.1"
+version = "0.22.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fc38e9190c4d09e93609c695de9babd090bee22f3f5d7ba471357c8ce7a0d73d"
+checksum = "997846b6e7ad93869478e6a9d7ea08dc7263ea787433b5f2670a1177f1e7c7ce"
 dependencies = [
  "http 1.1.0",
  "indexmap",
  "inventory",
  "openapiv3-extended",
  "serde_json",
- "structmeta 0.3.0",
+ "structmeta",
  "syn 2.0.66",
 ]
 
 [[package]]
 name = "oasgen-macro"
-version = "0.20.1"
+version = "0.22.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fc886b31b0d5538892c67cb9a3ab995e59527b88301d6bfbc6f23bdd88d16989"
+checksum = "8d84e40b52bfe230f96cdc5fc4ea55d6b7e2875955d06ab6c1a801aa8d64b91d"
 dependencies = [
  "oasgen-core",
  "proc-macro2",
  "quote",
  "serde_derive_internals",
- "structmeta 0.2.0",
+ "structmeta",
  "syn 2.0.66",
 ]
 
@@ -1720,36 +1719,13 @@ dependencies = [
 
 [[package]]
 name = "structmeta"
-version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "78ad9e09554f0456d67a69c1584c9798ba733a5b50349a6c0d0948710523922d"
-dependencies = [
- "proc-macro2",
- "quote",
- "structmeta-derive 0.2.0",
- "syn 2.0.66",
-]
-
-[[package]]
-name = "structmeta"
 version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2e1575d8d40908d70f6fd05537266b90ae71b15dbbe7a8b7dffa2b759306d329"
 dependencies = [
  "proc-macro2",
  "quote",
- "structmeta-derive 0.3.0",
- "syn 2.0.66",
-]
-
-[[package]]
-name = "structmeta-derive"
-version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a60bcaff7397072dca0017d1db428e30d5002e00b6847703e2e42005c95fbe00"
-dependencies = [
- "proc-macro2",
- "quote",
+ "structmeta-derive",
  "syn 2.0.66",
 ]
 
